@@ -1,3 +1,148 @@
+@ECHO OFF
+SET EXE_PATH=
+CLS
+
+:MAIN_MENU
+MODE 49,12 && COLOR 17
+TITLE=RAMMAP - MAIN MENU
+CLS
+
+ECHO.
+ECHO *************************************************
+ECHO *             RAMMAP TASK SCHEDULER             *
+ECHO *************************************************
+ECHO.
+ECHO  1.  Create Task
+ECHO  2.  Delete Task
+ECHO.
+ECHO *************************************************
+ECHO *               PRESS 'Q' TO QUIT               *
+ECHO *************************************************
+ECHO.
+
+SET INPUT=
+SET /P INPUT=Please select a number:
+
+IF /I '%INPUT%'=='1' GOTO Selection1
+IF /I '%INPUT%'=='2' GOTO Selection2
+IF /I '%INPUT%'=='Q' GOTO Quit
+
+MODE 40,12 && COLOR 47
+TITLE=INVALID INPUT - RAMMAP TASK SCHEDULER
+CLS
+
+ECHO.
+ECHO ****************************************
+ECHO *             INVALID INPUT            *
+ECHO ****************************************
+ECHO.
+ECHO  Please select an option from the Menu
+echo       [1-2] or select 'Q' to quit.
+ECHO.
+ECHO ****************************************
+ECHO *       PRESS ANY KEY TO CONTINUE      *
+ECHO ****************************************
+ECHO.
+
+PAUSE > NUL
+GOTO MAIN_MENU
+
+:CREATE_MENU
+MODE 49,17 && COLOR 17
+TITLE=RAMMAP - CREATE TASK
+CLS
+
+ECHO.
+ECHO *************************************************
+ECHO *             RAMMAP TASK SCHEDULER             *
+ECHO *************************************************
+ECHO.
+ECHO  A.  Empty Standby List
+ECHO  B.  Empty Priority 0 Standby List
+ECHO  C.  Empty Working Sets
+ECHO  D.  Empty System Working Sets
+ECHO  E.  Empty Modified Page List 
+ECHo -------------------------------------------------
+ECHO  0.  Return to the Main Menu
+ECHO.
+ECHO *************************************************
+ECHO *               PRESS 'Q' TO QUIT               *
+ECHO *************************************************
+ECHO.
+
+SET INPUT=
+SET /P INPUT=Please select a letter:
+
+IF /I '%INPUT%'=='A' GOTO SelectionA
+IF /I '%INPUT%'=='B' GOTO SelectionB
+IF /I '%INPUT%'=='C' GOTO SelectionC
+IF /I '%INPUT%'=='D' GOTO SelectionD
+IF /I '%INPUT%'=='E' GOTO SelectionE
+IF /I '%INPUT%'=='Q' GOTO Quit
+IF /I '%INPUT%'=='0' GOTO MAIN_MENU
+
+MODE 40,12 && COLOR 47
+TITLE=RAMMAP - INVALID INPUT
+CLS
+
+ECHO.
+ECHO ****************************************
+ECHO *             INVALID INPUT            *
+ECHO ****************************************
+ECHO.
+ECHO  Please select an option from the Menu
+echo       [A-E] or select 'Q' to quit.
+ECHO.
+ECHO ****************************************
+ECHO *       PRESS ANY KEY TO CONTINUE      *
+ECHO ****************************************
+ECHO.
+
+PAUSE > NUL
+GOTO CREATE_MENU
+
+:DELETE_MENU
+MODE 49,17 && COLOR 17
+TITLE=RAMMAP - DELETE TASK
+CLS
+
+ECHO.
+ECHO *************************************************
+ECHO *             RAMMAP TASK SCHEDULER             *
+ECHO *************************************************
+ECHO.
+ECHO  F.  Empty Standby List
+ECHO  G.  Empty Priority 0 Standby List
+ECHO  H.  Empty Working Sets
+ECHO  I.  Empty System Working Sets
+ECHO  J.  Empty Modified Page List
+ECHO -------------------------------------------------
+ECHO 0.  Return to the Main Menu
+ECHO.
+ECHO *************************************************
+ECHO *               PRESS 'Q' TO QUIT               *
+ECHO *************************************************
+ECHO.
+
+SET INPUT=
+SET /P INPUT=Please select a letter:
+
+IF /I '%INPUT%'=='F' GOTO SelectionA
+IF /I '%INPUT%'=='G' GOTO SelectionB
+IF /I '%INPUT%'=='H' GOTO SelectionC
+IF /I '%INPUT%'=='I' GOTO SelectionD
+IF /I '%INPUT%'=='J' GOTO SelectionE
+IF /I '%INPUT%'=='Q' GOTO Quit
+IF /I '%INPUT%'=='0' GOTO MAIN_MENU
+
+MODE 40,12 && COLOR 47
+TITLE=RAMMAP - INVALID INPUT
+CLS
+
+ECHO.
+ECHO ****************************************
+ECHO *             INVALID INPUT            *
+ECHO ****************************************
 ECHO.
 ECHO  Please select an option from the Menu
 echo       [F-J] or select 'Q' to quit.
