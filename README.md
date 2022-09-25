@@ -12,4 +12,10 @@ Windows BAT File to create scheduled tasks for RAMMap.
 SET EXE_PATH=
 ```
 
+**EXAMPLE**:
+
+```ini
+SET EXE_PATH=%ProgramFiles%\RamMap\RAMMap.exe
+```
+
  * Once you have set your RAMMap.exe path, simply run the [RAMMap Task Scheduler](https://raw.githubusercontent.com/NimbiDev/RAMMap-Task-Scheduler/main/RAMMap%20Task%20Scheduler.bat) bat file as Administrator and follow the prompts to CREATE and/or DELETE your chosen RAMMap tasks.
