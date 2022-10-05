@@ -1,5 +1,5 @@
 @ECHO OFF
-SET EXE_PATH=C:\\Tools\\RAMMap\\RAMMap.exe
+SET EXE_PATH=
 MODE 49,20
 CLS
 
@@ -128,11 +128,11 @@ ECHO.
 SET INPUT=
 SET /P INPUT=Please select a letter:
 
-IF /I '%INPUT%'=='F' GOTO SelectionA
-IF /I '%INPUT%'=='G' GOTO SelectionB
-IF /I '%INPUT%'=='H' GOTO SelectionC
-IF /I '%INPUT%'=='I' GOTO SelectionD
-IF /I '%INPUT%'=='J' GOTO SelectionE
+IF /I '%INPUT%'=='F' GOTO SelectionF
+IF /I '%INPUT%'=='G' GOTO SelectionG
+IF /I '%INPUT%'=='H' GOTO SelectionH
+IF /I '%INPUT%'=='I' GOTO SelectionI
+IF /I '%INPUT%'=='J' GOTO SelectionJ
 IF /I '%INPUT%'=='Q' GOTO Quit
 IF /I '%INPUT%'=='0' GOTO MAIN_MENU
 
@@ -219,7 +219,9 @@ ECHO.
 PAUSE>NUL
 GOTO CREATE_MENU
 
-:SectionF /DELETE /TN "Empty Standby List" /F /HRESULTHRESULT
+:SelectionF
+
+SCHTASKS /DELETE /TN "Empty Standby List" /F /HRESULT
 ECHO.
 ECHO *************************************************
 ECHO *           PRESS ANY KEY TO CONTINUE           *
@@ -228,7 +230,9 @@ ECHO.
 PAUSE>NUL
 GOTO DELETE_MENU
 
-:SectionF /DELETE /TN "Empty Priority 0 Standby List" /F /HRESULTHRESULT
+:SelectionG
+
+SCHTASKS /DELETE /TN "Empty Priority 0 Standby List" /F /HRESULT
 ECHO.
 ECHO *************************************************
 ECHO *           PRESS ANY KEY TO CONTINUE           *
@@ -237,7 +241,9 @@ ECHO.
 PAUSE>NUL
 GOTO DELETE_MENU
 
-:SectionF /DELETE /TN "Empty Modified Page List" /F /HRESULTHRESULT
+:SelectionH
+
+SCHTASKS /DELETE /TN "Empty Modified Page List" /F /HRESULT
 ECHO.
 ECHO *************************************************
 ECHO *           PRESS ANY KEY TO CONTINUE           *
@@ -246,7 +252,9 @@ ECHO.
 PAUSE>NUL
 GOTO DELETE_MENU
 
-:SectionF /DELETE /TN "Empty Working Sets" /F /HRESULTHRESULT
+:SelectionI
+
+SCHTASKS /DELETE /TN "Empty Working Sets" /F /HRESULT
 ECHO.
 ECHO *************************************************
 ECHO *           PRESS ANY KEY TO CONTINUE           *
@@ -255,7 +263,9 @@ ECHO.
 PAUSE>NUL
 GOTO DELETE_MENU
 
-:SectionF /DELETE /TN "Empty System Working Sets" /F /HRESULTHRESULT
+:SelectionJ
+
+SCHTASKS /DELETE /TN "Empty System Working Sets" /F /HRESULT
 ECHO.
 ECHO *************************************************
 ECHO *           PRESS ANY KEY TO CONTINUE           *
@@ -273,4 +283,3 @@ ECHO ======PRESS ANY KEY TO CONTINUE======
 
 PAUSE>NUL
 EXIT
-
