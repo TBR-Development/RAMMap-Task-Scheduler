@@ -4,6 +4,7 @@ author:
   email: JoshuaVL1988@protonmail.com
 description: >
   Windows batch script to create scheduled tasks for RAMMap
+baseurl: ./_docs
   
 show_excerpts: false
 
