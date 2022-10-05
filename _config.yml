@@ -20,3 +20,4 @@ minima:
     youtube_channel_name: OG_Nimbi
 header_pages:
   - index.md
+  - comment-policy.md
