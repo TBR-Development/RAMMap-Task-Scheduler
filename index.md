@@ -1,5 +1,6 @@
 ---
 layout: home
+comments: true
 ---
 
 Windows batch script to create scheduled tasks for RAMMap
