@@ -16,6 +16,7 @@ minima:
     github:  NimbiDev
     
 theme: minima
+markdown: kramdown
 
 plugins:
  - jekyll-feed
