@@ -18,7 +18,7 @@ SET EXE_PATH=
 **EXAMPLE**:
 
 ```ini
-SET EXE_PATH=C:\\Tools\\RAMMap\\RAMMap.exe
+SET EXE_PATH=C:\\RamMap\\RAMMap.exe
 ```
 
 
