@@ -1,6 +1,9 @@
 title: RamMap Task Scheduler
 url: nimbidev.github.io
 base_url: /RAMMap-Task-Scheduler
+author:
+    name: Joshua V. Lewis
+    email: "JoshuaVL1988@protonmail.com"
 disqus:
   shortname: NimbiDev
 description: >
@@ -8,11 +11,8 @@ description: >
 show_excerpts: true
 theme: minima
 minima:
-  skin: light
-  date_format: "%b %-d, %Y"  
-  author:
-    name: Joshua V. Lewis
-    email: "JoshuaVL1988@protonmail.com"  
+  skin: auto
+  date_format: "%b %-d, %Y"
   social_links:
     twitter: _Nimbi
     github: NimbiDev
