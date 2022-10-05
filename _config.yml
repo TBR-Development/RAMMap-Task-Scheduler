@@ -6,9 +6,7 @@ disqus:
 description: >
   Windows batch script to create scheduled tasks for RAMMap
   
-show_excerpts: false
-
-theme: minima
+show_excerpts: true
 
 minima:
   skin: auto
@@ -20,7 +18,7 @@ minima:
   
   social_links:
     twitter: _Nimbi
-    github: PhantomNimbi
+    github: NimbiDev
     # stackoverflow: ""
     # dribbble: 
     # facebook: 
@@ -51,5 +49,8 @@ minima:
 header_pages:
   - index.md
   # - 
-  # - 
+  # -
+
+theme: minima
+
 # google_analytics: UA-NNNNNNNN-N
