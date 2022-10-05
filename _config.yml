@@ -1,19 +1,14 @@
 title: RamMap Task Scheduler
 description: >
   Windows batch script to create scheduled tasks for RAMMap
-  
 show_excerpts: false
-
+theme: minima
 minima:
+  skin: auto
   date_format: "%b %-d, %Y"
-  
   social_links:
     twitter: _Nimbi
-    github:  NimbiDev
-    
-theme: minima
-markdown: kramdown
-
-plugins:
- - jekyll-feed
- - jekyll-seo-tag
+    github: PhantomNimbi
+header_pages:
+  - index.md
+# google_analytics: UA-NNNNNNNN-N
