@@ -1,0 +1,36 @@
+---
+layout: page
+title: "RamMap Task Scheduler"
+permalink: /index
+---
+
+<style type="text/css" media="screen">
+  .container {
+    margin: 10px auto;
+    max-width: 600px;
+    text-align: center;
+  }
+  h1 {
+    margin: 30px 0;
+    font-size: 4em;
+    line-height: 1;
+    letter-spacing: -1px;
+  }
+</style>
+
+<div class="container">
+  <h1>RamMap Task Scheduler</h1>
+
+  <p>Windows batch script to create scheduled tasks for RAMMap</p><br />
+  <p><Strong>Details</Strong></p>
+  <p>This script will create and/or delete scheduled tasks for the different RAMMap commands.<br />Upon creation, the specified task(s) will run every 5 minutes indefinitely from the time of creation.</p>
+
+  <p><Strong>Instructions</Strong></p>
+  <p>Download the <a href="https://download.sysinternals.com/files/RAMMap.zip">RAMMap</a> zip file and extract it to a location of your choice.</p>
+  <p>Download the <a href="https://raw.githubusercontent.com/NimbiDev/RAMMap-Task-Scheduler/main/RAMMap%20Task%20Scheduler.bat">RAMMap Task Scheduler</a> bat file and place it in a safe place of your choice.</p>
+  <p>Open the <a href="https://raw.githubusercontent.com/NimbiDev/RAMMap-Task-Scheduler/main/RAMMap%20Task%20Scheduler.bat">RAMMap Task Scheduler</a> bat file in a text editor and add your RAMMap.exe path in the following line:</p>
+  <p><code>SET EXE_PATH=</code></p>
+  <p><Strong>EXAMPLE:</Strong></p>
+  <p><code>SET EXE_PATH=C:\\RamMap\\RAMMap.exe</code></p>
+  <p>Once you have set your RAMMap.exe path, simply run the <a href="https://raw.githubusercontent.com/NimbiDev/RAMMap-Task-Scheduler/main/RAMMap%20Task%20Scheduler.bat">RAMMap Task Scheduler</a> bat file as Administrator and follow the prompts to CREATE and/or DELETE your chosen RAMMap tasks.</p>
+</div>
