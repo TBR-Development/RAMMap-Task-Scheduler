@@ -8,7 +8,7 @@ description: >
 show_excerpts: true
 theme: minima
 minima:
-  skin: auto
+  skin: solarized
   date_format: "%b %-d, %Y"
   author:
     name: Joshua V. Lewis
