@@ -1,2 +1,21 @@
-name: RamMap Task Scheduler
-remote_theme: benbalter/retlab
+title: RamMap Task Scheduler
+author:
+  name: PhantomNimbi
+  email: JoshuaVL1988@protonmail.com
+description: >
+  Windows batch script to create scheduled tasks for RAMMap
+  
+show_excerpts: false
+
+minima:
+  date_format: "%b %-d, %Y"
+  
+  social_links:
+    twitter: _Nimbi
+    github:  NimbiDev
+    
+theme: minima
+
+plugins:
+ - jekyll-feed
+ - jekyll-seo-tag
