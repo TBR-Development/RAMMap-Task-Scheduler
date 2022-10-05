@@ -1,5 +1,5 @@
 @ECHO OFF
-SET EXE_PATH=
+SET EXE_PATH=C:\\Tools\\RAMMap\\RAMMap.exe
 MODE 49,20
 CLS
 
@@ -99,7 +99,7 @@ ECHO *           PRESS ANY KEY TO CONTINUE           *
 ECHO *************************************************
 ECHO.
 
-PAUSE > NUL
+PAUSE>NUL
 GOTO CREATE_MENU
 
 :DELETE_MENU
@@ -153,7 +153,7 @@ ECHO *           PRESS ANY KEY TO CONTINUE           *
 ECHO *************************************************
 ECHO.
 
-PAUSE > NUL
+PAUSE>NUL
 GOTO DELETE_MENU
 
 :Selection1
@@ -167,51 +167,101 @@ GOTO DELETE_MENU
 :SelectionA
 
 SCHTASKS /CREATE /TN "Empty Standby List" /TR "\"%EXE_PATH%\" -Et" /RL "HIGHEST" /SC MINUTE /MO 5 /RU "ADMINISTRATORS" /F /HRESULT
-PAUSE > NUL
+ECHO.
+ECHO *************************************************
+ECHO *           PRESS ANY KEY TO CONTINUE           *
+ECHO *************************************************
+ECHO.
+PAUSE>NUL
 GOTO CREATE_MENU
 
 :SelectionB
 
-SCHTASKS /CREATE /TN "Priority 0 Standby List" /TR "\"%EXE_PATH%\" -E0" /RL "HIGHEST" /SC MINUTE /MO 5 /RU "ADMINISTRATORS" /F /HRESULT
-PAUSE > NUL
+SCHTASKS /CREATE /TN "Priority 0 Standby List" /TR "\"%EXE_PATH%\" -E0" /RL "HIGHEST" /SC MINUTE /MO 5 /RU "ADMINISTRATORS" /F /HRESULTHRESULT
+ECHO.
+ECHO *************************************************
+ECHO *           PRESS ANY KEY TO CONTINUE           *
+ECHO *************************************************
+ECHO.
+PAUSE>NUL
 GOTO CREATE_MENU
 
 :SelectionC
 
-SCHTASKS /CREATE /TN "Working Sets" /TR "\"%EXE_PATH%\" -Ew" /RL "HIGHEST" /SC MINUTE /MO 5 /RU "ADMINISTRATORS" /F /HRESULT
-PAUSE > NUL
+SCHTASKS /CREATE /TN "Working Sets" /TR "\"%EXE_PATH%\" -Ew" /RL "HIGHEST" /SC MINUTE /MO 5 /RU "ADMINISTRATORS" /F /HRESULTHRESULT
+ECHO.
+ECHO *************************************************
+ECHO *           PRESS ANY KEY TO CONTINUE           *
+ECHO *************************************************
+ECHO.
+PAUSE>NUL
 GOTO CREATE_MENU
 
 :SelectionD
 
-SCHTASKS /CREATE /TN "Working System Sets" /TR "\"%EXE_PATH%\" -Es" /RL "HIGHEST" /SC MINUTE /MO 5 /RU "ADMINISTRATORS" /F /HRESULT
-PAUSE > NUL
+SCHTASKS /CREATE /TN "Working System Sets" /TR "\"%EXE_PATH%\" -Es" /RL "HIGHEST" /SC MINUTE /MO 5 /RU "ADMINISTRATORS" /F /HRESULTHRESULT
+ECHO.
+ECHO *************************************************
+ECHO *           PRESS ANY KEY TO CONTINUE           *
+ECHO *************************************************
+ECHO.
+PAUSE>NUL
 GOTO CREATE_MENU
 
 :SelectionE
 
-SCHTASKS /CREATE /TN "Empty Modified Page List" /TR "\"%EXE_PATH%\" -Em" /RL "HIGHEST" /SC MINUTE /MO 5 /RU "ADMINISTRATORS" /F /HRESULT
-PAUSE > NUL
+SCHTASKS /CREATE /TN "Empty Modified Page List" /TR "\"%EXE_PATH%\" -Em" /RL "HIGHEST" /SC MINUTE /MO 5 /RU "ADMINISTRATORS" /F /HRESULTHRESULT
+ECHO.
+ECHO *************************************************
+ECHO *           PRESS ANY KEY TO CONTINUE           *
+ECHO *************************************************
+ECHO.
+PAUSE>NUL
 GOTO CREATE_MENU
 
-:SectionF /DELETE /TN "Empty Standby List" /F /HRESULT
-PAUSE > NUL
+:SectionF /DELETE /TN "Empty Standby List" /F /HRESULTHRESULT
+ECHO.
+ECHO *************************************************
+ECHO *           PRESS ANY KEY TO CONTINUE           *
+ECHO *************************************************
+ECHO.
+PAUSE>NUL
 GOTO DELETE_MENU
 
-:SectionF /DELETE /TN "Empty Priority 0 Standby List" /F /HRESULT
-PAUSE
+:SectionF /DELETE /TN "Empty Priority 0 Standby List" /F /HRESULTHRESULT
+ECHO.
+ECHO *************************************************
+ECHO *           PRESS ANY KEY TO CONTINUE           *
+ECHO *************************************************
+ECHO.
+PAUSE>NUL
 GOTO DELETE_MENU
 
-:SectionF /DELETE /TN "Empty Modified Page List" /F /HRESULT
-PAUSE > NUL
+:SectionF /DELETE /TN "Empty Modified Page List" /F /HRESULTHRESULT
+ECHO.
+ECHO *************************************************
+ECHO *           PRESS ANY KEY TO CONTINUE           *
+ECHO *************************************************
+ECHO.
+PAUSE>NUL
 GOTO DELETE_MENU
 
-:SectionF /DELETE /TN "Empty Working Sets" /F /HRESULT
-PAUSE > NUL
+:SectionF /DELETE /TN "Empty Working Sets" /F /HRESULTHRESULT
+ECHO.
+ECHO *************************************************
+ECHO *           PRESS ANY KEY TO CONTINUE           *
+ECHO *************************************************
+ECHO.
+PAUSE>NUL
 GOTO DELETE_MENU
 
-:SectionF /DELETE /TN "Empty System Working Sets" /F /HRESULT
-PAUSE > NUL
+:SectionF /DELETE /TN "Empty System Working Sets" /F /HRESULTHRESULT
+ECHO.
+ECHO *************************************************
+ECHO *           PRESS ANY KEY TO CONTINUE           *
+ECHO *************************************************
+ECHO.
+PAUSE>NUL
 GOTO DELETE_MENU
 
 :Quit
@@ -223,3 +273,4 @@ ECHO ======PRESS ANY KEY TO CONTINUE======
 
 PAUSE>NUL
 EXIT
+
