@@ -1,7 +1,15 @@
 title: RamMap Task Scheduler
 description: >
   Windows batch script to create scheduled tasks for RAMMap
-show_excerpts: true
+  
+show_excerpts: false
+
 theme: minima
+
 header_pages:
   - index.md
+  - instructions.md
+  
+plugins:
+ - jekyll-feed
+ - jekyll-seo-tag
