@@ -1,23 +1,7 @@
 title: RamMap Task Scheduler
-url: nimbidev.github.io
-base_url: /RAMMap-Task-Scheduler
-disqus:
-  shortname: NimbiDev
 description: >
   Windows batch script to create scheduled tasks for RAMMap
 show_excerpts: true
 theme: minima
-minima:
-  skin: solarized
-  date_format: "%b %-d, %Y"
-  author:
-    name: Joshua V. Lewis
-    email: "JoshuaVL1988@protonmail.com"
-  social_links:
-    twitter: _Nimbi
-    github: NimbiDev
-    youtube_channel: UC1dPqxDD90xQfEOypMwgZqg
-    youtube_channel_name: OG_Nimbi
 header_pages:
   - index.md
-  - comment-policy.md
