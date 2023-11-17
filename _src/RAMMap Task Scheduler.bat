@@ -188,7 +188,7 @@ GOTO CREATE_MENU
 
 :SelectionC
 
-SCHTASKS /CREATE /TN "Working Sets" /TR "\"%EXE_PATH%\" -Ew" /RL "HIGHEST" /SC MINUTE /MO 5 /RU "ADMINISTRATORS" /F /HRESULTHRESULT
+SCHTASKS /CREATE /TN "Working Sets" /TR "\"%EXE_PATH%\" -Ew" /RL "HIGHEST" /SC MINUTE /MO 5 /RU "ADMINISTRATORS" /F /HRESULT
 ECHO.
 ECHO *************************************************
 ECHO *           PRESS ANY KEY TO CONTINUE           *
@@ -199,7 +199,7 @@ GOTO CREATE_MENU
 
 :SelectionD
 
-SCHTASKS /CREATE /TN "Working System Sets" /TR "\"%EXE_PATH%\" -Es" /RL "HIGHEST" /SC MINUTE /MO 5 /RU "ADMINISTRATORS" /F /HRESULTHRESULT
+SCHTASKS /CREATE /TN "Working System Sets" /TR "\"%EXE_PATH%\" -Es" /RL "HIGHEST" /SC MINUTE /MO 5 /RU "ADMINISTRATORS" /F /HRESULT
 ECHO.
 ECHO *************************************************
 ECHO *           PRESS ANY KEY TO CONTINUE           *
