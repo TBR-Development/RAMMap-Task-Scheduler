@@ -1,8 +1,8 @@
 title                           : RamMap Task Scheduler
 description                     : >
   Windows batch script to create scheduled tasks for RAMMap
-repository                      : tbr-development/RAMMap-Task-Scheduler
-baseUrl                         : "/RAMMap-Task-Scheduler"
+repository                      : tbr-development/rammap-task-scheduler
+baseUrl                         : "/rammap-task-scheduler"
 url                             : "//tbr-development.github.io"
 show_excerpts                   : false
 permalink                       : pretty
@@ -14,16 +14,16 @@ last_edit_timestamp             : true
 last_edit_time_format           : "%b %e %Y at %I:%M %p" 
 gh_edit_link                    : true
 gh_edit_link_text               : "Edit this page on GitHub." 
-gh_edit_repository              : "//github.com/tbr-development/RAMMap-Task-Scheduler" 
+gh_edit_repository              : "//github.com/tbr-development/rammap-task-scheduler" 
 gh_edit_branch                  : "main" 
 gh_edit_source                  : docs
 gh_edit_view_mode               : "tree"
 back_to_top                     : true
 back_to_top_text                : "Back to top"  
 header_pages                    :
+  - 404.md
   - index.md
   - instructions.md
-  - 404.md
 plugins                         :
   - jekyll-seo-tag
   - jekyll-github-metadata
