@@ -38,7 +38,7 @@ ECHO *                 INVALID INPUT                 *
 ECHO *************************************************
 ECHO.
 ECHO       Please select an option from the Menu
-echo          [A-E] or select 'Q' to quit.
+echo         [1-2] or select 'Q' to quit.
 ECHO.
 ECHO *************************************************
 ECHO *           PRESS ANY KEY TO CONTINUE           *
@@ -146,7 +146,7 @@ ECHO *                 INVALID INPUT                 *
 ECHO *************************************************
 ECHO.
 ECHO       Please select an option from the Menu
-echo          [A-E] or select 'Q' to quit.
+echo          [F-J] or select 'Q' to quit.
 ECHO.
 ECHO *************************************************
 ECHO *           PRESS ANY KEY TO CONTINUE           *
