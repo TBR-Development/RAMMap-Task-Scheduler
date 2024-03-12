@@ -277,9 +277,9 @@ GOTO DELETE_MENU
 :Quit
 CLS
 
-ECHO ==============THANKYOU===============
+ECHO ============ THANK YOU ==============
 ECHO -------------------------------------
-ECHO ======PRESS ANY KEY TO CONTINUE======
+ECHO ===== PRESS ANY KEY TO CONTINUE =====
 
 PAUSE>NUL
 EXIT
